@@ -1,8 +1,8 @@
 {
-  "name": "me.elephantsuite.mobileapp",
-  "displayName": "HelloCordova",
+  "name": "com.elephant.app",
+  "displayName": "Elephant - The Ultimate Student Suite",
   "version": "1.0.0",
-  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "description": "Mobile App for Elephant - The Ultimate Student Suite",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,17 +13,13 @@
   "author": "Apache Cordova Team",
   "license": "Apache-2.0",
   "devDependencies": {
-    "cordova-android": "^11.0.0",
-    "cordova-ios": "^6.2.0",
-    "cordova-plugin-device": "^2.1.0"
+    "cordova-android": "^10.1.2",
+    "cordova-ios": "^6.3.0"
   },
   "cordova": {
     "platforms": [
       "android",
       "ios"
-    ],
-    "plugins": {
-      "cordova-plugin-device": {}
-    }
+    ]
   }
 }

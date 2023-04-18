@@ -1,52 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="msapplication-tap-highlight" content="no">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <title>Devide Info</title>
-</head>
-<body>
-<h2>Device Info</h2>
-<div style="overflow-x:auto;">
-    <table>
-        <tr>
-            <td>Cordova Version</td>
-            <td><p id="version"></p></td>
-        </tr>
-        <tr>
-            <td>Device Model</td>
-            <td><p id="model"></p></td>
-        </tr>
-        <tr>
-            <td>Platfrom</td>
-            <td><p id="platform"></p></td>
-        </tr>
-        <tr>
-            <td>UUID</td>
-            <td><p id="uuid"></p></td>
-        </tr>
-        <tr>
-            <td>Android Version</td>
-            <td><p id="androidVersion"></p></td>
-        </tr>
-        <tr>
-            <td>Manufacturer</td>
-            <td><p id="manufacturer"></p></td>
-        </tr>
-        <tr>
-            <td>isVirtual</td>
-            <td><p id="isvirtual"></p></td>
-        </tr>
-        <tr>
-            <td>Serial Number</td>
-            <td><p id="serialNo"></p></td>
-        </tr>
-    </table>
-</div>
-<script type="text/javascript" src="cordova.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, please refer to the docs:
+            https://cordova.apache.org/docs/en/latest/
+        Some notes:
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="style.css">
+        <title>Elephant - The Ultimate Student Hub</title>
+
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div id="loading-modal">
+            <img src="./img/elephant-white-shadow.png" alt="">
+        </div>
+        <div id="login-modal">
+            <h1>Join The Elephant Community</h1>
+        </div>
+    </body>
 </html>
