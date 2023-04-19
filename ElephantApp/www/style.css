@@ -68,6 +68,7 @@ body *{
     align-items:center;
     justify-content:center;
     transition-duration:250ms;
+    z-index:2;
 }
 
 #loading-modal > img{
@@ -85,4 +86,124 @@ body *{
     } to{
         transform:scale(1);
     }
+}
+
+#login-modal{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    position:absolute;
+    background:var(--bg-color-1);
+    width:100vw;
+    height:100vh;
+    top:0;
+    left:0;
+    z-index:1;
+}
+
+#login-modal > div:first-of-type{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    gap:16px;
+}
+
+#login-modal > div:first-of-type > img{
+    height:128px;
+}
+
+#login-modal > div:first-of-type > h1{
+    margin:0;
+    font-size:48px;
+    display:none;
+}
+
+#login-modal > p{
+    font-size:24px;
+    font-weight:700;
+    margin: 0 0 36px;
+    color:black;
+}
+
+.input-container{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    padding:18px 24px;
+    border-radius:12px;
+    background:var(--bg-color-2);
+    margin-bottom:24px;
+    width:calc(75vw - 48px);
+    gap:24px;
+}
+
+.input-container > div{
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+    justify-content:flex-start;
+    align-items:flex-start;
+}
+
+.input-container > div > p{
+    margin:0;
+    font-size:12px;
+    font-weight:500;
+    color:gray;
+}
+
+.input-container > div > input{
+    margin:0;
+    border:0;
+    outline:0;
+    font-size:16px;
+    font-weight:700;
+    background:transparent;
+    width:100%;
+}
+
+.input-container > img{
+    height:24px;
+    filter:invert(0.5);
+}
+
+.primary-button{
+    width:75vw;
+    padding:24px 0;
+    font-size:16px;
+    text-transform:uppercase;
+    color:white;
+    font-weight:700;
+    border:none;
+    outline:none;
+    border-radius:32px;
+    background:linear-gradient(135deg, var(--primary-accent), var(--primary-accent-gradient));
+}
+
+.secondary-button{
+    width:50vw;
+    height:36px;
+    border:1px solid var(--light-border-color);
+    color:gray;
+    background:transparent;
+    font-size:16px;
+    border-radius:6px;
+    outline:none;
+}
+
+.tertiary-button{
+    border:none;
+    outline:none;
+    margin-top:24px;
+    background:transparent;
+    color:var(--primary-accent);
+    font-weight:700;
+}
+
+#login-bottom{
+    position:absolute;
+    bottom:24px;
 }
