@@ -6,6 +6,7 @@
         Kothari Enterprises LLC
     </author>
     <content src="index.html" />
+    <icon src="res/logo.png" size="64px"/>
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
 </widget>

@@ -22,34 +22,70 @@
         <script src="script.js" defer></script>
     </head>
     <body>
+        <div id="wifi-warning" class="inactive-modal">
+            <p>Wifi May Not Be Available</p>
+        </div>
         <div id="loading-modal">
             <img src="./img/elephant-white-shadow.png" alt="">
         </div>
-        <div id="login-modal">
+        <div id="main-container" class="login-container active-container">
+            <div class="back-img" style="display:none;">
+                <img src="../res/icons/back.png" alt="">
+            </div>
             <div>
-                <img src="./img/elephant-pink.png" alt="">
+                <img src="./img/elephant-pink.png" alt="Logo">
                 <h1>Elephant</h1>
             </div>
-            <p>Sign In to Continue</p>
-            <div class="input-container">
-                <div>
-                    <p>Email</p>
-                    <input id="login-email" type="email" placeholder="Email">
-                </div>
-                <img src="./icons/email.png" alt="">
+            <h1>Welcome to Elephant</h1>
+            <p>Empowering students to maximize their full intellectual potential</p>
+            <button class="primary-button" id="main-container-login-btn">Log In</button>
+            <button class="secondary-button" id="main-container-signup-btn">Create an Account</button>
+        </div>
+        <div id="login-modal" class="login-container">
+            <div class="back-img">
+                <img src="../res/icons/back.png" alt="">
             </div>
-            <div class="input-container">
-                <div>
+            <img src="./img/elephant-pink.png" alt="Logo">
+            <h1>Welcome Back</h1>
+            <p>Enter your credentials to get back to your learning!</p>
+            <div class="input-containers">
+                <div class="input-container">
+                    <p>Email Address</p>
+                    <input type="text" id="login-email" placeholder="Email Address">
+                </div>
+                <div class="input-container">
                     <p>Password</p>
-                    <input id="login-password" type="password" placeholder="Password">
+                    <input type="password" id="login-password" placeholder="Password">
                 </div>
-                <img src="./icons/invisible.png" alt="">
             </div>
-            <button class="primary-button">Login</button>
-            <button class="tertiary-button">Forgot Password</button>
-            <div id="login-bottom">
-                <button class="secondary-button">Sign Up</button>
+            <button class="tertiary-button" style="margin-bottom:24px">Forgot your Password?</button>
+            <button class="primary-button deactivated-primary-button input-container-primary-button" id="login-button">Log In</button>
+        </div>
+        <div id="forgot-password" class="login-container">
+            <div class="back-img">
+                <img src="../res/icons/back.png" alt="">
             </div>
+            <img src="./img/elephant-pink.png" alt="Logo">
+            <h1>Forgot Password?</h1>
+        </div>
+        <div id="signup-modal-type" class="login-container">
+            <div class="back-img">
+                <img src="../res/icons/back.png" alt="">
+            </div>
+            <img src="./img/elephant-pink.png" alt="Logo">
+            <h1>Create An Account</h1>
+            <p>Select which account type you would like to create.</p>
+            <button class="primary-button" style="justify-content:space-between;">
+                <img src="../res/icons/user.png" alt="">
+                <p>Individual User</p>
+            </button>
+        </div>
+        <div id="individual-signup" class="login-container">
+            <div class="back-img">
+                <img src="../res/icons/back.png" alt="">
+            </div>
+            <img src="./img/elephant-pink.png" alt="Logo">
+            <h1>Join The Team</h1>
         </div>
     </body>
 </html>
