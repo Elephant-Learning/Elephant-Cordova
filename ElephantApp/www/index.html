@@ -25,13 +25,13 @@
         <div id="wifi-warning" class="inactive-modal">
             <p>Wifi May Not Be Available</p>
         </div>
+        <div id="back-button-modal" class="inactive-modal">
+            <img src="icons/back.png" alt="">
+        </div>
         <div id="loading-modal">
             <img src="./img/elephant-white-shadow.png" alt="">
         </div>
         <div id="main-container" class="login-container active-container">
-            <div class="back-img" style="display:none;">
-                <img src="../res/icons/back.png" alt="">
-            </div>
             <div>
                 <img src="./img/elephant-pink.png" alt="Logo">
                 <h1>Elephant</h1>
@@ -42,50 +42,63 @@
             <button class="secondary-button" id="main-container-signup-btn">Create an Account</button>
         </div>
         <div id="login-modal" class="login-container">
-            <div class="back-img">
-                <img src="../res/icons/back.png" alt="">
-            </div>
             <img src="./img/elephant-pink.png" alt="Logo">
             <h1>Welcome Back</h1>
             <p>Enter your credentials to get back to your learning!</p>
             <div class="input-containers">
                 <div class="input-container">
                     <p>Email Address</p>
-                    <input type="text" id="login-email" placeholder="Email Address">
+                    <input type="email" id="login-email" placeholder="Email Address">
                 </div>
                 <div class="input-container">
                     <p>Password</p>
                     <input type="password" id="login-password" placeholder="Password">
                 </div>
             </div>
-            <button class="tertiary-button" style="margin-bottom:24px">Forgot your Password?</button>
+            <button class="tertiary-button" style="margin-bottom:24px" id="forgot-password-button">Forgot your Password?</button>
             <button class="primary-button deactivated-primary-button input-container-primary-button" id="login-button">Log In</button>
         </div>
         <div id="forgot-password" class="login-container">
-            <div class="back-img">
-                <img src="../res/icons/back.png" alt="">
-            </div>
             <img src="./img/elephant-pink.png" alt="Logo">
             <h1>Forgot Password?</h1>
+            <p>Enter your email to get the opportunity to change your password.</p>
+            <div class="input-containers">
+                <div class="input-container">
+                    <p>Email Address</p>
+                    <input type="email" id="forgot-password-email" placeholder="Email Address">
+                </div>
+            </div>
+            <button class="primary-button deactivated-primary-button input-container-primary-button" id="forgot-password-btn">Change Password</button>
         </div>
         <div id="signup-modal-type" class="login-container">
-            <div class="back-img">
-                <img src="../res/icons/back.png" alt="">
-            </div>
             <img src="./img/elephant-pink.png" alt="Logo">
             <h1>Create An Account</h1>
-            <p>Select which account type you would like to create.</p>
-            <button class="primary-button" style="justify-content:space-between;">
-                <img src="../res/icons/user.png" alt="">
+            <p>To join Elephant, please select the option that best fits you!</p>
+            <button class="primary-button" style="justify-content:space-between; margin-top:24px;" id="individual-signup-portal">
+                <img src="icons/user.png" alt="">
                 <p>Individual User</p>
             </button>
         </div>
         <div id="individual-signup" class="login-container">
-            <div class="back-img">
-                <img src="../res/icons/back.png" alt="">
-            </div>
             <img src="./img/elephant-pink.png" alt="Logo">
             <h1>Join The Team</h1>
+            <p>We are very excited to have you join us!</p>
+            <div class="input-containers">
+                <div class="input-container">
+                    <p>Full Name</p>
+                    <input type="text" id="individual-name" placeholder="Full Name">
+                </div>
+                <div class="input-container">
+                    <p>Email Address</p>
+                    <input type="email" id="individual-email" placeholder="Email Address">
+                </div>
+                <div class="input-container">
+                    <p>Password</p>
+                    <input type="password" id="individual-password" placeholder="Password">
+                </div>
+            </div>
+            <button class="primary-button deactivated-primary-button input-container-primary-button">Sign Up</button>
+            <button class="tertiary-button" id="different-account-btn">Select Different Account</button>
         </div>
     </body>
 </html>
