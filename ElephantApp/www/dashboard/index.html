@@ -6,12 +6,30 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dashboard | Elephant - The Ultimate Student Suite</title>
+
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../img/logo.png">
+
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <div id="wifi-warning" class="inactive-modal">
+        <p>Wifi May Not Be Available</p>
+    </div>
+    <div id="loading-modal">
+        <img src="../img/elephant-white-shadow.png" alt="">
+    </div>
     <div id="main-wrapper">
         <div id="page-carousel">
             <div class="page">
 
+            </div>
+            <div class="page">
+
+            </div>
+            <div class="page active-page" id="home-page">
+                <h1 id="welcome-header"></h1>
             </div>
             <div class="page">
 
@@ -21,15 +39,21 @@
             </div>
         </div>
         <div id="bottom-buttons">
-            <a href="" class="small-bottom-button">
+            <button class="small-bottom-button">
                 <img src="../icons/deck.png" alt="">
-            </a>
-            <a href="" class="small-bottom-button">
-                <img src="../icons/home.png" alt="">
-            </a>
-            <a href="" class="small-bottom-button">
+            </button>
+            <button class="small-bottom-button">
                 <img src="../icons/ask.png" alt="">
-            </a>
+            </button>
+            <button class="small-bottom-button active-bottom-button">
+                <img src="../icons/home.png" alt="">
+            </button>
+            <button class="small-bottom-button">
+                <img src="../icons/user.png" alt="">
+            </button>
+            <button class="small-bottom-button" id="logout-button">
+                <img src="../icons/logout.png" alt="">
+            </button>
         </div>
     </div>
 </body>

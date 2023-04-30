@@ -105,7 +105,8 @@ async function initializeNavbar(){
 
             const context = await response.json();
 
-            localStorage.setItem("offlineUser", context.context.user);
+            localStorage.setItem("offlineUser", JSON.stringify(context.context.user));
+            window.location = "./dashboard/index.html"
         } else {
             param1 = true;
             loginModal();
@@ -292,7 +293,7 @@ document.getElementById("login-button").addEventListener("click", async function
     } else {
         localStorage.setItem('savedUserId', JSON.stringify(content.context.user.id));
         localStorage.setItem('autoLogin', JSON.stringify(true));
-        location.href = "./dashboard";
+        window.location = "./dashboard/index.html";
     }
 });
 
